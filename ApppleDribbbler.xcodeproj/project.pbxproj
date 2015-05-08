@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE16A7631A228CB700E0B7B6 /* swift 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EE16A7621A228CB700E0B7B6 /* swift 1.jpeg */; };
 		EE80FE431A11719F00AB64BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80FE421A11719F00AB64BD /* AppDelegate.swift */; };
 		EE80FE461A1171A000AB64BD /* RSSReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE80FE441A1171A000AB64BD /* RSSReader.xcdatamodeld */; };
-		EE80FE481A1171A000AB64BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80FE471A1171A000AB64BD /* ViewController.swift */; };
 		EE80FE4B1A1171A000AB64BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE80FE491A1171A000AB64BD /* Main.storyboard */; };
 		EE80FE4D1A1171A000AB64BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE80FE4C1A1171A000AB64BD /* Images.xcassets */; };
 		EE80FE501A1171A000AB64BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE80FE4E1A1171A000AB64BD /* LaunchScreen.xib */; };
 		EE80FE5C1A1171A000AB64BD /* RSSReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80FE5B1A1171A000AB64BD /* RSSReaderTests.swift */; };
+		EE80FE661A11729B00AB64BD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80FE651A11729B00AB64BD /* TableViewController.swift */; };
+		EE80FE681A12C19500AB64BD /* XMLParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80FE671A12C19500AB64BD /* XMLParserManager.swift */; };
+		EE80FE6A1A1419BF00AB64BD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80FE691A1419BF00AB64BD /* FeedViewController.swift */; };
+		EEA7F6511A22227F002A66A1 /* RSSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA7F6501A22227F002A66A1 /* RSSTableViewCell.swift */; };
+		EEA7F6531A2224F0002A66A1 /* RSSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA7F6521A2224F0002A66A1 /* RSSTableViewCell.xib */; };
+		EEA7F6581A225284002A66A1 /* ImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA7F6571A225284002A66A1 /* ImageFetcher.m */; };
+		EEEA79F51A25EF04009B2556 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA79F41A25EF04009B2556 /* ImageCache.swift */; };
+		EEEB669D1A2299CC00B46B93 /* apple-dribble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EEEB669C1A2299CC00B46B93 /* apple-dribble.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +35,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE80FE3D1A11719F00AB64BD /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE16A7621A228CB700E0B7B6 /* swift 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "swift 1.jpeg"; path = "../../../../Downloads/Swifts/swift 1.jpeg"; sourceTree = "<group>"; };
+		EE80FE3D1A11719F00AB64BD /* ApppleDribbbler.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApppleDribbbler.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE80FE411A11719F00AB64BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE80FE421A11719F00AB64BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE80FE451A1171A000AB64BD /* RSSReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSSReader.xcdatamodel; sourceTree = "<group>"; };
-		EE80FE471A1171A000AB64BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE80FE4A1A1171A000AB64BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE80FE4C1A1171A000AB64BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EE80FE4F1A1171A000AB64BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		EE80FE551A1171A000AB64BD /* RSSReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE80FE551A1171A000AB64BD /* ApppleDribbbler.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApppleDribbbler.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE80FE5A1A1171A000AB64BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE80FE5B1A1171A000AB64BD /* RSSReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSReaderTests.swift; sourceTree = "<group>"; };
+		EE80FE651A11729B00AB64BD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EE80FE671A12C19500AB64BD /* XMLParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserManager.swift; sourceTree = "<group>"; };
+		EE80FE691A1419BF00AB64BD /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EEA7F6501A22227F002A66A1 /* RSSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSTableViewCell.swift; sourceTree = "<group>"; };
+		EEA7F6521A2224F0002A66A1 /* RSSTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSTableViewCell.xib; sourceTree = "<group>"; };
+		EEA7F6571A225284002A66A1 /* ImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFetcher.m; sourceTree = "<group>"; };
+		EEA7F65A1A2253A1002A66A1 /* RSSReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSReader-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEA7F65D1A225955002A66A1 /* ImageFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFetcher.h; sourceTree = "<group>"; };
+		EEEA79F41A25EF04009B2556 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		EEEB669C1A2299CC00B46B93 /* apple-dribble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "apple-dribble.jpg"; path = "../../../../Downloads/apple-dribble.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +79,7 @@
 		EE80FE341A11719F00AB64BD = {
 			isa = PBXGroup;
 			children = (
-				EE80FE3F1A11719F00AB64BD /* RSSReader */,
+				EE80FE3F1A11719F00AB64BD /* ApppleDribbbler */,
 				EE80FE581A1171A000AB64BD /* RSSReaderTests */,
 				EE80FE3E1A11719F00AB64BD /* Products */,
 			);
@@ -70,23 +88,32 @@
 		EE80FE3E1A11719F00AB64BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE80FE3D1A11719F00AB64BD /* RSSReader.app */,
-				EE80FE551A1171A000AB64BD /* RSSReaderTests.xctest */,
+				EE80FE3D1A11719F00AB64BD /* ApppleDribbbler.temp_caseinsensitive_rename.app */,
+				EE80FE551A1171A000AB64BD /* ApppleDribbbler.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE80FE3F1A11719F00AB64BD /* RSSReader */ = {
+		EE80FE3F1A11719F00AB64BD /* ApppleDribbbler */ = {
 			isa = PBXGroup;
 			children = (
+				EED533D51A2697B4005CD890 /* XMLParser */,
+				EED533D41A269797005CD890 /* Images */,
+				EED533D31A26977A005CD890 /* ImageFetcher */,
+				EED533D21A26975C005CD890 /* ImageCache */,
 				EE80FE421A11719F00AB64BD /* AppDelegate.swift */,
-				EE80FE471A1171A000AB64BD /* ViewController.swift */,
+				EE80FE651A11729B00AB64BD /* TableViewController.swift */,
+				EEA7F6501A22227F002A66A1 /* RSSTableViewCell.swift */,
+				EEA7F6521A2224F0002A66A1 /* RSSTableViewCell.xib */,
+				EE80FE691A1419BF00AB64BD /* FeedViewController.swift */,
 				EE80FE491A1171A000AB64BD /* Main.storyboard */,
 				EE80FE4C1A1171A000AB64BD /* Images.xcassets */,
 				EE80FE4E1A1171A000AB64BD /* LaunchScreen.xib */,
 				EE80FE441A1171A000AB64BD /* RSSReader.xcdatamodeld */,
 				EE80FE401A11719F00AB64BD /* Supporting Files */,
+				EEA7F65A1A2253A1002A66A1 /* RSSReader-Bridging-Header.h */,
 			);
+			name = ApppleDribbbler;
 			path = RSSReader;
 			sourceTree = "<group>";
 		};
@@ -115,12 +142,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EED533D21A26975C005CD890 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA79F41A25EF04009B2556 /* ImageCache.swift */,
+			);
+			name = ImageCache;
+			sourceTree = "<group>";
+		};
+		EED533D31A26977A005CD890 /* ImageFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				EEA7F6571A225284002A66A1 /* ImageFetcher.m */,
+				EEA7F65D1A225955002A66A1 /* ImageFetcher.h */,
+			);
+			name = ImageFetcher;
+			sourceTree = "<group>";
+		};
+		EED533D41A269797005CD890 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE16A7621A228CB700E0B7B6 /* swift 1.jpeg */,
+				EEEB669C1A2299CC00B46B93 /* apple-dribble.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EED533D51A2697B4005CD890 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				EE80FE671A12C19500AB64BD /* XMLParserManager.swift */,
+			);
+			name = XMLParser;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE80FE3C1A11719F00AB64BD /* RSSReader */ = {
+		EE80FE3C1A11719F00AB64BD /* ApppleDribbbler.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE80FE5F1A1171A000AB64BD /* Build configuration list for PBXNativeTarget "RSSReader" */;
+			buildConfigurationList = EE80FE5F1A1171A000AB64BD /* Build configuration list for PBXNativeTarget "ApppleDribbbler.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				EE80FE391A11719F00AB64BD /* Sources */,
 				EE80FE3A1A11719F00AB64BD /* Frameworks */,
@@ -130,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = RSSReader;
+			name = ApppleDribbbler.temp_caseinsensitive_rename;
 			productName = RSSReader;
-			productReference = EE80FE3D1A11719F00AB64BD /* RSSReader.app */;
+			productReference = EE80FE3D1A11719F00AB64BD /* ApppleDribbbler.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EE80FE541A1171A000AB64BD /* RSSReaderTests */ = {
+		EE80FE541A1171A000AB64BD /* ApppleDribbbler.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE80FE621A1171A000AB64BD /* Build configuration list for PBXNativeTarget "RSSReaderTests" */;
+			buildConfigurationList = EE80FE621A1171A000AB64BD /* Build configuration list for PBXNativeTarget "ApppleDribbbler.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				EE80FE511A1171A000AB64BD /* Sources */,
 				EE80FE521A1171A000AB64BD /* Frameworks */,
@@ -148,9 +209,9 @@
 			dependencies = (
 				EE80FE571A1171A000AB64BD /* PBXTargetDependency */,
 			);
-			name = RSSReaderTests;
+			name = ApppleDribbbler.temp_caseinsensitive_renameTests;
 			productName = RSSReaderTests;
-			productReference = EE80FE551A1171A000AB64BD /* RSSReaderTests.xctest */;
+			productReference = EE80FE551A1171A000AB64BD /* ApppleDribbbler.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE80FE381A11719F00AB64BD /* Build configuration list for PBXProject "RSSReader" */;
+			buildConfigurationList = EE80FE381A11719F00AB64BD /* Build configuration list for PBXProject "ApppleDribbbler" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +245,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE80FE3C1A11719F00AB64BD /* RSSReader */,
-				EE80FE541A1171A000AB64BD /* RSSReaderTests */,
+				EE80FE3C1A11719F00AB64BD /* ApppleDribbbler.temp_caseinsensitive_rename */,
+				EE80FE541A1171A000AB64BD /* ApppleDribbbler.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,7 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA7F6531A2224F0002A66A1 /* RSSTableViewCell.xib in Resources */,
+				EEEB669D1A2299CC00B46B93 /* apple-dribble.jpg in Resources */,
 				EE80FE4B1A1171A000AB64BD /* Main.storyboard in Resources */,
+				EE16A7631A228CB700E0B7B6 /* swift 1.jpeg in Resources */,
 				EE80FE501A1171A000AB64BD /* LaunchScreen.xib in Resources */,
 				EE80FE4D1A1171A000AB64BD /* Images.xcassets in Resources */,
 			);
@@ -215,8 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE80FE481A1171A000AB64BD /* ViewController.swift in Sources */,
+				EEA7F6511A22227F002A66A1 /* RSSTableViewCell.swift in Sources */,
 				EE80FE431A11719F00AB64BD /* AppDelegate.swift in Sources */,
+				EEEA79F51A25EF04009B2556 /* ImageCache.swift in Sources */,
+				EEA7F6581A225284002A66A1 /* ImageFetcher.m in Sources */,
+				EE80FE661A11729B00AB64BD /* TableViewController.swift in Sources */,
+				EE80FE6A1A1419BF00AB64BD /* FeedViewController.swift in Sources */,
+				EE80FE681A12C19500AB64BD /* XMLParserManager.swift in Sources */,
 				EE80FE461A1171A000AB64BD /* RSSReader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,7 +303,7 @@
 /* Begin PBXTargetDependency section */
 		EE80FE571A1171A000AB64BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EE80FE3C1A11719F00AB64BD /* RSSReader */;
+			target = EE80FE3C1A11719F00AB64BD /* ApppleDribbbler.temp_caseinsensitive_rename */;
 			targetProxy = EE80FE561A1171A000AB64BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,9 +409,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RSSReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ApppleDribbbler.temp_caseinsensitive_rename;
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSReader/RSSReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -350,9 +423,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RSSReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ApppleDribbbler.temp_caseinsensitive_rename;
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSReader/RSSReader-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -370,7 +446,7 @@
 				);
 				INFOPLIST_FILE = RSSReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ApppleDribbbler.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSReader.app/RSSReader";
 			};
 			name = Debug;
@@ -385,7 +461,7 @@
 				);
 				INFOPLIST_FILE = RSSReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ApppleDribbbler.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSReader.app/RSSReader";
 			};
 			name = Release;
@@ -393,7 +469,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE80FE381A11719F00AB64BD /* Build configuration list for PBXProject "RSSReader" */ = {
+		EE80FE381A11719F00AB64BD /* Build configuration list for PBXProject "ApppleDribbbler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE80FE5D1A1171A000AB64BD /* Debug */,
@@ -402,21 +478,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE80FE5F1A1171A000AB64BD /* Build configuration list for PBXNativeTarget "RSSReader" */ = {
+		EE80FE5F1A1171A000AB64BD /* Build configuration list for PBXNativeTarget "ApppleDribbbler.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE80FE601A1171A000AB64BD /* Debug */,
 				EE80FE611A1171A000AB64BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		EE80FE621A1171A000AB64BD /* Build configuration list for PBXNativeTarget "RSSReaderTests" */ = {
+		EE80FE621A1171A000AB64BD /* Build configuration list for PBXNativeTarget "ApppleDribbbler.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE80FE631A1171A000AB64BD /* Debug */,
 				EE80FE641A1171A000AB64BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

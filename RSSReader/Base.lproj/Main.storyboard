@@ -1,25 +1,173 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bkc-5k-G2V">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Appple Dribbbler-->
+        <scene sceneID="wZn-mb-QhW">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="yFE-CB-rtC" customClass="TableViewController" customModule="ApppleDribbbler_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" id="K3F-I0-dtz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="shA-pS-cx0" detailTextLabel="7NA-sf-Fbx" rowHeight="46" style="IBUITableViewCellStyleSubtitle" id="I1K-0t-Y5Z">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I1K-0t-Y5Z" id="tkC-vS-naQ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="shA-pS-cx0">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7NA-sf-Fbx">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="bno-B3-avD" kind="show" identifier="openPage" id="rS6-9G-H0e"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yFE-CB-rtC" id="TEk-e3-Dcr"/>
+                            <outlet property="delegate" destination="yFE-CB-rtC" id="1B0-AX-ROz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Appple Dribbbler" id="DKd-BF-74L"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAE-zL-zhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1053" y="435"/>
+        </scene>
+        <!--Feed View-->
+        <scene sceneID="D0h-e0-IhQ">
+            <objects>
+                <viewController title="Feed View" id="bno-B3-avD" customClass="FeedViewController" customModule="ApppleDribbbler_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5gw-ZE-639"/>
+                        <viewControllerLayoutGuide type="bottom" id="ss1-F5-THQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="KJe-5q-yku">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pao-af-3Tv">
+                                <rect key="frame" x="16" y="72" width="42" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="568" height="57"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="368" height="57"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="72" width="356" height="49"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="apple-dribble.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VQk-ut-5oq">
+                                <rect key="frame" x="0.0" y="137" width="600" height="463"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="137" width="600" height="263"/>
+                                </variation>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="161" width="288" height="245"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="VQk-ut-5oq" secondAttribute="trailing" constant="-8" id="64F-D9-Rb6">
+                                <variation key="widthClass=compact" constant="-16"/>
+                            </constraint>
+                            <constraint firstItem="VQk-ut-5oq" firstAttribute="top" secondItem="5gw-ZE-639" secondAttribute="bottom" constant="155" id="R0W-zO-hxV"/>
+                            <constraint firstItem="ss1-F5-THQ" firstAttribute="top" secondItem="VQk-ut-5oq" secondAttribute="bottom" constant="69" id="b5x-kI-UL9">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="VQk-ut-5oq" firstAttribute="top" secondItem="5gw-ZE-639" secondAttribute="bottom" constant="73" id="d5S-qg-DFi">
+                                <variation key="heightClass=compact-widthClass=compact" constant="122"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="VQk-ut-5oq" secondAttribute="trailing" constant="195" id="g9Z-no-3gA"/>
+                            <constraint firstItem="VQk-ut-5oq" firstAttribute="leading" secondItem="KJe-5q-yku" secondAttribute="leadingMargin" constant="-10" id="htL-em-lGD">
+                                <variation key="widthClass=compact" constant="-16"/>
+                            </constraint>
+                            <constraint firstItem="VQk-ut-5oq" firstAttribute="leading" secondItem="KJe-5q-yku" secondAttribute="leadingMargin" constant="196" id="i3M-1b-DOJ"/>
+                            <constraint firstItem="ss1-F5-THQ" firstAttribute="top" secondItem="VQk-ut-5oq" secondAttribute="bottom" constant="95" id="rTS-Ay-6Kp"/>
+                            <constraint firstAttribute="centerX" secondItem="VQk-ut-5oq" secondAttribute="centerX" id="xDF-nD-Gy6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="64F-D9-Rb6"/>
+                                <exclude reference="R0W-zO-hxV"/>
+                                <exclude reference="d5S-qg-DFi"/>
+                                <exclude reference="g9Z-no-3gA"/>
+                                <exclude reference="htL-em-lGD"/>
+                                <exclude reference="i3M-1b-DOJ"/>
+                                <exclude reference="xDF-nD-Gy6"/>
+                                <exclude reference="b5x-kI-UL9"/>
+                                <exclude reference="rTS-Ay-6Kp"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="64F-D9-Rb6"/>
+                                <include reference="d5S-qg-DFi"/>
+                                <include reference="htL-em-lGD"/>
+                                <include reference="xDF-nD-Gy6"/>
+                                <include reference="b5x-kI-UL9"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="R0W-zO-hxV"/>
+                                <include reference="g9Z-no-3gA"/>
+                                <include reference="i3M-1b-DOJ"/>
+                                <include reference="rTS-Ay-6Kp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Appple Dribbbler" id="SO4-Ho-HkJ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="pictureView" destination="VQk-ut-5oq" id="xbu-kH-6dY"/>
+                        <outlet property="textView" destination="Pao-af-3Tv" id="MVC-kl-St7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJC-GQ-NOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2022" y="570"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qfa-0G-f2Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bkc-5k-G2V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fk0-eq-2xU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yFE-CB-rtC" kind="relationship" relationship="rootViewController" id="efA-Ts-Qwu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBp-OH-lyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="435"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple-dribble.jpg" width="400" height="300"/>
+    </resources>
 </document>
