@@ -1,4 +1,4 @@
-# iPhone RSS Reader
+# iPhone Swift RSS Reader
 
 This project is basically an RSS Reader app for iPhone.
 
@@ -8,4 +8,4 @@ This project is basically an RSS Reader app for iPhone.
 
 Here's is a gif I recorded of the project:
 
-![](http://portfolio-graemefulton.rhcloud.com/content/images/2016/11/giphy.gif)
+<img src="http://www.graemefulton.com/content/images/2016/11/giphy.gif)">
